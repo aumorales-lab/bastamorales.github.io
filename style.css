@@ -29,7 +29,7 @@ header {
 }
 
 .logo {
-  color: #5b4b8a;          
+  color: #5b4b8a;
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -43,7 +43,6 @@ header {
 .logo:hover {
   transform: translateY(-2px);
 }
-
 
 .navmenu {
   display: flex;
@@ -122,7 +121,7 @@ header {
   transform: translateY(5px);
 }
 
-/* SOCIAL ICONS (FIXED CLASS NAME) */
+/* SOCIAL ICONS */
 .social-icon {
   transition: transform 0.4s ease, color 0.4s ease;
 }
@@ -152,4 +151,144 @@ header {
 
 .home-img img:hover {
   transform: scale(1.05);
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+/* Tablet (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 1.5rem 4rem;
+  }
+
+  .home {
+    padding: 2rem 4rem 0 8rem;
+    gap: 2rem;
+  }
+
+  .home-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .home-text h3 {
+    padding-left: 5rem;
+  }
+
+  .home-img img {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+/* Mobile (up to 767px) */
+@media screen and (max-width: 767px) {
+  header {
+    padding: 1rem 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .navmenu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .navmenu a {
+    margin: 0 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .home {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 100vh;
+    padding: 8rem 2rem 2rem 2rem;
+    gap: 3rem;
+  }
+
+  .home-text {
+    text-align: center;
+    order: 2;
+  }
+
+  .home-text h2 {
+    font-size: 2rem;
+  }
+
+  .home-text h3 {
+    padding-left: 0;
+    padding-top: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .home-text h3::before {
+    width: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0.5rem;
+  }
+
+  .home-text p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 11px;
+  }
+
+  .home-img {
+    order: 1;
+  }
+
+  .home-img img {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+/* Small Mobile (up to 480px) */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .navmenu a {
+    margin: 0 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .home {
+    padding: 7rem 1.5rem 2rem 1.5rem;
+  }
+
+  .home-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .home-text h3 {
+    font-size: 0.95rem;
+  }
+
+  .home-img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 10px;
+  }
 }
