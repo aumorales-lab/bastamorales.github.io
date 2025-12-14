@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact / Resume - Aubrey</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="logo">Aubrey Ace N. Morales</a>
+      <ul class="navmenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </header>
+
+    <section
+      class="contact"
+      style="
+        height: auto;
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        align-items: start;
+      "
+    >
+      <!-- LEFT SIDE -->
+      <div class="contact-left">
+        <h2>Resume <i class="ph-bold ph-file-text"></i></h2>
+
+        <!-- KEY SKILLS -->
+        <h4 style="margin-top: 1.5rem">Key Skills</h4>
+        <ul style="margin-left: 1.5rem; line-height: 1.9rem">
+          <li>HTML & CSS</li>
+          <li>Python Programming</li>
+          <li>Responsive Web Design</li>
+          <li>Problem Solving</li>
+        </ul>
+
+        <!-- EDUCATION -->
+        <h4 style="margin-top: 1.5rem">Education</h4>
+        <ul style="margin-left: 1.5rem; line-height: 1.9rem">
+          <li>  
+            <strong>Elementary</strong>
+            <br />
+            Santicon Elementary School
+            <br />
+            <strong>Senior High School</strong>
+            <br />
+            Polangui General Comprehensive High school
+            <br />
+            (Junior High School – <em>With Honors</em>)
+            <br />
+            (Senior High School – <em>With High Honors</em>)
+            <br />
+            <strong>University</strong>
+            <br />
+            Camarines Sur Polytechnic Colleges 
+            <br /> 
+            Bachelor of Science in Computer Science
+            <br />
+            (<em>First Year Student</em>)
+          </li>
+        </ul>
+
+        <!-- EXPERIENCE -->
+        <h4 style="margin-top: 1.5rem">Experience</h4>
+        <ul style="margin-left: 1.5rem; line-height: 1.9rem">
+          <li>Student Projects in Web Development</li>
+          <li>Mini Systems (ATM Mini Machine, Vending Machine & 3D Waffle Cone – Python)</li>
+          <li>Portfolio Website Design & Development</li>
+        </ul>
+
+        <!-- CONTACT INFO -->
+        <h2 style="margin-top: 3rem">
+          Contact Me <i class="ph-bold ph-chat"></i>
+        </h2>
+        <p>
+          If you’d like to collaborate or ask questions, feel free to reach
+          out using the contact details below.
+        </p>
+
+        <div style="margin-top: 2rem; line-height: 2.2rem">
+          <p><i class="ph-bold ph-envelope"></i> aumorales@my.cspc.edu.ph</p>
+          <p><i class="ph-bold ph-phone"></i> +63 910 122 1639</p>
+          <p><i class="ph-bold ph-instagram-logo"></i> @strawobries</p>
+          <p><i class="ph-bold ph-telegram-logo"></i> strawobries</p>
+          <p><i class="ph-bold ph-github-logo"></i> github.com/aumorales-lab</p>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <h3>Message Me</h3>
+
+        <form
+          id="contactForm"
+          style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem"
+        >
+          <input
+            type="text"
+            placeholder="Your Name"
+            required
+            style="padding: 0.8rem; border-radius: 0.5rem; border: 1px solid #ccc"
+          />
+
+          <input
+            type="email"
+            placeholder="Your Email"
+            required
+            style="padding: 0.8rem; border-radius: 0.5rem; border: 1px solid #ccc"
+          />
+
+          <textarea
+            rows="5"
+            placeholder="Your Message"
+            required
+            style="padding: 0.8rem; border-radius: 0.5rem; border: 1px solid #ccc"
+          ></textarea>
+
+          <button type="submit" class="btn" style="width: fit-content">
+            Send Message
+          </button>
+        </form>
+
+        <script>
+          const form = document.getElementById("contactForm");
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Your message has been sent! Thank you for reaching out.");
+            form.reset();
+          });
+        </script>
+      </div>
+    </section>
+  </body>
+</html>
