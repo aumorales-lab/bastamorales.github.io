@@ -14,7 +14,6 @@ body {
   color: #4a3f6b;
 }
 
-/* HEADER */
 header {
   position: fixed;
   width: 100%;
@@ -60,7 +59,6 @@ header {
   color: #e48ab8;
 }
 
-/* HOME SECTION */
 .home {
   width: 100%;
   height: 100vh;
@@ -71,7 +69,6 @@ header {
   gap: 1rem;
 }
 
-/* TEXT */
 .home-text h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -101,7 +98,6 @@ header {
   color: #6f678a;
 }
 
-/* BUTTON */
 .btn {
   display: inline-block;
   padding: 1rem;
@@ -121,7 +117,6 @@ header {
   transform: translateY(5px);
 }
 
-/* SOCIAL ICONS */
 .social-icon {
   transition: transform 0.4s ease, color 0.4s ease;
 }
@@ -131,7 +126,6 @@ header {
   color: #e48ab8;
 }
 
-/* PROFILE IMAGE */
 .home-img {
   display: flex;
   justify-content: center;
@@ -153,11 +147,6 @@ header {
   transform: scale(1.05);
 }
 
-/* ===========================
-   RESPONSIVE DESIGN
-   =========================== */
-
-/* Tablet (768px - 1024px) */
 @media screen and (max-width: 1024px) {
   header {
     padding: 1.5rem 4rem;
@@ -182,7 +171,6 @@ header {
   }
 }
 
-/* Mobile (up to 767px) */
 @media screen and (max-width: 767px) {
   header {
     padding: 1rem 2rem;
@@ -255,7 +243,6 @@ header {
   }
 }
 
-/* Small Mobile (up to 480px) */
 @media screen and (max-width: 480px) {
   header {
     padding: 1rem 1.5rem;
@@ -293,7 +280,6 @@ header {
   }
 }
 
-/* CONTACT SECTION - Desktop */
 .contact {
   width: 100%;
   min-height: 100vh;
@@ -364,7 +350,6 @@ header {
   min-height: 150px;
 }
 
-/* CONTACT SECTION - Responsive */
 @media screen and (max-width: 1024px) {
   .contact {
     padding: 2rem 4rem 2rem 8rem;
@@ -456,7 +441,6 @@ header {
   }
 }
 
-/* RESUME SECTION - Desktop */
 .resume {
   width: 100%;
   min-height: 100vh;
@@ -503,7 +487,6 @@ header {
   line-height: 1.6;
 }
 
-/* RESUME SECTION - Responsive */
 @media screen and (max-width: 1024px) {
   .resume {
     padding: 2rem 4rem 2rem 8rem;
@@ -573,4 +556,5 @@ header {
   .resume-section p {
     font-size: 0.9rem;
   }
+
 }
